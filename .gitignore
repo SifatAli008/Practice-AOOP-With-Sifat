@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # Compiled class files
 *.class
 
 # Log files
+=======
+# Compiled class file
+*.class
+
+# Log file
+>>>>>>> f80c730e274fc0a383453fadb23d75ea6c28ec1a
 *.log
 
 # BlueJ files
@@ -10,7 +17,11 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+<<<<<<< HEAD
 # Package Files
+=======
+# Package Files #
+>>>>>>> f80c730e274fc0a383453fadb23d75ea6c28ec1a
 *.jar
 *.war
 *.nar
@@ -19,6 +30,7 @@
 *.tar.gz
 *.rar
 
+<<<<<<< HEAD
 # Virtual machine crash logs
 hs_err_pid*
 replay_pid*
@@ -57,3 +69,8 @@ node_modules/
 # Documentation build artifacts
 docs/_build/
 docs/.doctrees/ 
+=======
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+>>>>>>> f80c730e274fc0a383453fadb23d75ea6c28ec1a

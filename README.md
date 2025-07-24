@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Advanced Object Oriented Programming Course
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/advanced-oop-course)
@@ -134,3 +135,7 @@ graph TD
 [![GitHub forks](https://img.shields.io/github/forks/yourusername/advanced-oop-course?style=social)](https://github.com/yourusername/advanced-oop-course)
 
 </div> 
+=======
+# Practice-AOOP-With-Sifat
+Practice AOOP With Sifat - A comprehensive Java Advanced Object-Oriented Programming course featuring 12 weeks of structured learning with hands-on practice, GUI development, collections, multithreading, networking, and real-world project implementation.
+>>>>>>> f80c730e274fc0a383453fadb23d75ea6c28ec1a
