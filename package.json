@@ -1,0 +1,23 @@
+{
+  "name": "practice-aoop-with-sifat",
+  "version": "1.0.0",
+  "description": "Advanced Object-Oriented Programming course documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building documentation...'",
+    "deploy": "echo 'Deployment ready'"
+  },
+  "keywords": [
+    "java",
+    "oop",
+    "programming",
+    "education",
+    "documentation"
+  ],
+  "author": "Sifat Ali",
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-cli": "^1.0.0"
+  }
+} 
