@@ -3,125 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced OOP Course Documentation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <title>Practice-AOOP-With-Sifat - Advanced Object-Oriented Programming Course</title>
     <style>
-        .markdown-body {
+        * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            min-width: 200px;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 45px;
         }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
         .header {
             text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             margin-bottom: 30px;
         }
-        .nav {
-            background: #f6f8fa;
-            padding: 15px;
-            border-radius: 6px;
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 2rem;
             margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
         }
-        .nav a {
-            margin: 0 10px;
+        
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin: 20px 0 10px 0;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
             text-decoration: none;
-            color: #0366d6;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            margin: 10px 5px;
         }
-        .nav a:hover {
-            text-decoration: underline;
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🎓 Advanced Object-Oriented Programming Course</h1>
-        <p>Comprehensive documentation for advanced Java programming education</p>
-    </div>
-    
-    <div class="nav">
-        <a href="index.html">📚 Main Documentation</a>
-        <a href="week1.html">📖 Week 1 Learning</a>
-        <a href="home.html">🏠 Home</a>
-    </div>
-    
-    <div class="markdown-body">
-        <h1>Advanced Object Oriented Programming Documentation</h1>
-        
-        <h2>📋 Course Overview</h2>
-        <p>This comprehensive course covers advanced concepts in Object-Oriented Programming using Java, focusing on practical implementation, GUI development, collections, file handling, multithreading, and networking.</p>
-        
-        <h2>📅 Course Structure (12 Weeks)</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Week</th>
-                    <th>Topic</th>
-                    <th>Key Components</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td><strong>Week 1</strong></td><td>OOP Review</td><td>3 Learning Stations</td></tr>
-                <tr><td><strong>Week 2</strong></td><td>GUI Basics</td><td>JavaFX Introduction</td></tr>
-                <tr><td><strong>Week 3</strong></td><td>JavaFX Graphics & SceneBuilder</td><td>Visual Design</td></tr>
-                <tr><td><strong>Week 4</strong></td><td>Collections Framework</td><td>Data Structures</td></tr>
-                <tr><td><strong>Week 5</strong></td><td>File I/O & Serialization</td><td>Data Persistence</td></tr>
-                <tr><td><strong>Week 6</strong></td><td>Multithreading in Java</td><td>Concurrent Programming</td></tr>
-                <tr><td><strong>Week 7</strong></td><td>Project Development</td><td>Real-world Application</td></tr>
-                <tr><td><strong>Week 8</strong></td><td>Networking</td><td>Client-Server Architecture</td></tr>
-                <tr><td><strong>Week 9</strong></td><td>Project Progress</td><td>Development Milestones</td></tr>
-                <tr><td><strong>Week 10</strong></td><td>Final Coding Test</td><td>Comprehensive Assessment</td></tr>
-                <tr><td><strong>Week 11</strong></td><td>Final Project Progress</td><td>Final Development</td></tr>
-                <tr><td><strong>Week 12</strong></td><td>Final Project Submission</td><td>Project Showcase</td></tr>
-            </tbody>
-        </table>
-        
-        <h2>📊 Assessment Breakdown</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Component</th>
-                    <th>Marks</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>✅ Attendance</td><td><strong>10</strong></td><td>Class participation</td></tr>
-                <tr><td>💻 Coding Assignment</td><td><strong>10</strong></td><td>Individual tasks</td></tr>
-                <tr><td>🧪 Coding Tests</td><td><strong>30</strong></td><td>3 tests (10 each)</td></tr>
-                <tr><td>📁 Project</td><td><strong>40</strong></td><td>Complete project</td></tr>
-                <tr><td>┗ 📑 Report</td><td><strong>5</strong></td><td>Documentation</td></tr>
-                <tr><td>┗ 💻 Code</td><td><strong>25</strong></td><td>Functionality</td></tr>
-                <tr><td>┗ 🗣️ Presentation</td><td><strong>10</strong></td><td>Demo & presentation</td></tr>
-                <tr><td><strong>🎯 Total</strong></td><td><strong>100</strong></td><td>Complete assessment</td></tr>
-            </tbody>
-        </table>
-        
-        <h2>🎯 Learning Objectives</h2>
-        <ul>
-            <li>Master advanced OOP concepts and principles</li>
-            <li>Understand GUI development with JavaFX</li>
-            <li>Comprehend collections framework and data structures</li>
-            <li>Learn file I/O operations and serialization</li>
-            <li>Grasp multithreading concepts and synchronization</li>
-            <li>Understand networking fundamentals and socket programming</li>
-        </ul>
-        
-        <h2>📚 Study Resources</h2>
-        <ul>
-            <li>Advanced Java Programming textbooks</li>
-            <li>JavaFX documentation and tutorials</li>
-            <li>Collections framework reference guides</li>
-            <li>Multithreading and concurrency resources</li>
-            <li>Networking and socket programming guides</li>
-        </ul>
-        
-        <div style="text-align: center; margin-top: 50px; padding: 20px; background: #f6f8fa; border-radius: 6px;">
-            <h3>🎓 Course Outcomes</h3>
-            <p>Upon successful completion, students will be able to design and implement complex Java applications, create interactive GUI applications, utilize collections framework effectively, handle file operations, develop concurrent applications, and implement network applications.</p>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Practice-AOOP-With-Sifat</h1>
+            <p>Advanced Object-Oriented Programming Course with Java</p>
+            <p>A comprehensive 12-week course featuring hands-on practice, GUI development, collections, multithreading, networking, and real-world project implementation.</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>📚 Course Overview</h2>
+                <p>This comprehensive course covers advanced concepts in Object-Oriented Programming using Java, focusing on practical implementation, GUI development, collections, file handling, multithreading, and networking.</p>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Weeks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Learning Stations</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100</div>
+                        <div class="stat-label">Total Marks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Project Weight</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Week 1: OOP Review</h2>
+                <p>Week 1 focuses on establishing strong foundational knowledge in Java programming and Object-Oriented Programming principles.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🔢 Station 1: Java Core Foundations</h4>
+                        <p>DataType, JavaToken, Operators, Data Conversion</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 Station 2: Arrays & Strings</h4>
+                        <p>Arrays, String Handling, Algorithms</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🏗️ Station 3: Object-Oriented Programming</h4>
+                        <p>Inheritance, Object Class, Encapsulation, Polymorphism</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💻 Practice Exercises</h2>
+                <p>Complete working examples demonstrating all Week 1 concepts:</p>
+                
+                <div class="card">
+                    <h3>✅ DataTypesDemo.java</h3>
+                    <p>Comprehensive demonstration of primitive and reference data types, type conversion, and wrapper classes.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>✅ OperatorsDemo.java</h3>
+                    <p>Complete coverage of arithmetic, relational, logical, bitwise, and assignment operators with examples.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>✅ ArraysDemo.java</h3>
+                    <p>1D and 2D arrays, sorting algorithms (Bubble, Selection, Insertion), searching algorithms (Linear, Binary), and utility methods.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>✅ StringsDemo.java</h3>
+                    <p>String manipulation, StringBuilder vs StringBuffer, comparison techniques, and string algorithms (palindrome, anagram, etc.).</p>
+                </div>
+                
+                <div class="card">
+                    <h3>✅ OOPDemo.java</h3>
+                    <p>Complete OOP implementation with encapsulation, inheritance, polymorphism, abstract classes, and interfaces.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🚀 Quick Start</h2>
+                <div class="code-block">
+# Clone the repository
+git clone https://github.com/SifatAli008/Practice-AOOP-With-Sifat.git
+
+# Navigate to Week 1 practice
+cd Practice-AOOP-With-Sifat/Practice/Pra1
+
+# Compile and run
+javac -d bin src/*.java
+java -cp bin Main
+
+# Or use the build script
+build.bat
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📊 Assessment Breakdown</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>✅ Attendance (10 marks)</h4>
+                        <p>Class participation</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>💻 Coding Assignment (10 marks)</h4>
+                        <p>Individual tasks</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🧪 Coding Tests (30 marks)</h4>
+                        <p>3 tests (10 each)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📁 Project (40 marks)</h4>
+                        <p>Complete project with report, code, and presentation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔗 Resources</h2>
+                <div style="text-align: center;">
+                    <a href="https://github.com/SifatAli008/Practice-AOOP-With-Sifat" class="btn">📁 View on GitHub</a>
+                    <a href="https://github.com/SifatAli008/Practice-AOOP-With-Sifat/blob/main/Advanced_OOP_Documentation.md" class="btn">📚 Full Documentation</a>
+                    <a href="https://github.com/SifatAli008/Practice-AOOP-With-Sifat/blob/main/Week1_Learning_README.md" class="btn">📖 Week 1 Guide</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🎓 Advanced Object-Oriented Programming Course Documentation</p>
+            <p>Comprehensive, well-structured, and GitHub-ready documentation for advanced Java programming education.</p>
+            <p>Built with ❤️ for learning Java OOP concepts</p>
         </div>
     </div>
 </body>
