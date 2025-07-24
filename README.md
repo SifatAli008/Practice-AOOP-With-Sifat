@@ -1,9 +1,10 @@
-<<<<<<< HEAD
-# Advanced Object Oriented Programming Course
+# Practice-AOOP-With-Sifat
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/yourusername/advanced-oop-course)
+Practice AOOP With Sifat - A comprehensive Java Advanced Object-Oriented Programming course featuring 12 weeks of structured learning with hands-on practice, GUI development, collections, multithreading, networking, and real-world project implementation.
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/SifatAli008/Practice-AOOP-With-Sifat)
 [![Java](https://img.shields.io/badge/Java-Advanced%20OOP-orange?style=for-the-badge&logo=java)](https://www.oracle.com/java/)
-[![Documentation](https://img.shields.io/badge/Documentation-Complete-green?style=for-the-badge&logo=markdown)](https://github.com/yourusername/advanced-oop-course)
+[![Documentation](https://img.shields.io/badge/Documentation-Complete-green?style=for-the-badge&logo=markdown)](https://github.com/SifatAli008/Practice-AOOP-With-Sifat)
 
 ## 📁 Directory Structure
 
@@ -131,11 +132,7 @@ graph TD
 
 *Comprehensive, well-structured, and GitHub-ready documentation for advanced Java programming education.*
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/advanced-oop-course?style=social)](https://github.com/yourusername/advanced-oop-course)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/advanced-oop-course?style=social)](https://github.com/yourusername/advanced-oop-course)
+[![GitHub stars](https://img.shields.io/github/stars/SifatAli008/Practice-AOOP-With-Sifat?style=social)](https://github.com/SifatAli008/Practice-AOOP-With-Sifat)
+[![GitHub forks](https://img.shields.io/github/forks/SifatAli008/Practice-AOOP-With-Sifat?style=social)](https://github.com/SifatAli008/Practice-AOOP-With-Sifat)
 
-</div> 
-=======
-# Practice-AOOP-With-Sifat
-Practice AOOP With Sifat - A comprehensive Java Advanced Object-Oriented Programming course featuring 12 weeks of structured learning with hands-on practice, GUI development, collections, multithreading, networking, and real-world project implementation.
->>>>>>> f80c730e274fc0a383453fadb23d75ea6c28ec1a
+</div>
