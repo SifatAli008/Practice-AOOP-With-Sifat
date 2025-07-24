@@ -8,13 +8,25 @@ To enable GitHub Pages for this repository, follow these steps:
 1. Go to your repository: https://github.com/SifatAli008/Practice-AOOP-With-Sifat
 2. Click on **Settings** tab
 3. Scroll down to **Pages** section (in the left sidebar)
-4. Under **Source**, select **Deploy from a branch**
-5. Under **Branch**, select **gh-pages** and **/(root)**
-6. Click **Save**
+4. Under **Source**, select **GitHub Actions**
+5. Click **Save**
+
+**OR** (Alternative approach):
+1. Under **Source**, select **Deploy from a branch**
+2. Under **Branch**, select **gh-pages** and **/(root)**
+3. Click **Save**
 
 ### Step 2: Run Deployment
+**Option A - Modern Deployment:**
 1. Go to **Actions** tab in your repository
-2. Select **Deploy to GitHub Pages (Simple)** workflow
+2. Select **Deploy Static Site** workflow
+3. Click **Run workflow** button
+4. Select **main** branch
+5. Click **Run workflow**
+
+**Option B - Simple Deployment:**
+1. Go to **Actions** tab in your repository
+2. Select **Simple Deploy to GitHub Pages** workflow
 3. Click **Run workflow** button
 4. Select **main** branch
 5. Click **Run workflow**
